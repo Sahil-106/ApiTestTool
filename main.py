@@ -109,9 +109,11 @@ INDEX_HTML = r"""
 </head>
 <body class="bg-gray-50 min-h-screen p-6">
     <div class="max-w-4xl mx-auto">
-        <h1 class="text-center text-3xl font-bold mb-6 text-[#0056b3]">SAC API Test Tool</h1>
+        
         
         <div class="bg-white rounded-lg shadow p-6 mb-6">
+         <h1 class="text-center text-3xl font-bold mb-6 text-[#0056b3]">SAC API Test Tool</h1>
+         <h6 class="text-center text0xl font-sm mb-6">Based on the tenant "https://support-qrc.eu10.sapanalytics.cloud/"</h6>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
                     <label class="block text-md font-medium mb-1 text-bold">Method</label>
