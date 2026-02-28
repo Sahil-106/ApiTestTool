@@ -109,12 +109,12 @@ INDEX_HTML = r"""
 </head>
 <body class="bg-gray-50 min-h-screen p-6">
     <div class="max-w-4xl mx-auto">
-        <h1 class="text-2xl font-bold mb-6">SAC API Test Tool</h1>
+        <h1 class="text-center text-3xl font-bold mb-6 text-[#0056b3]">SAC API Test Tool</h1>
         
         <div class="bg-white rounded-lg shadow p-6 mb-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                 <div>
-                    <label class="block text-sm font-medium mb-1">Method</label>
+                    <label class="block text-md font-medium mb-1 text-bold">Method</label>
                     <select id="method" class="w-full border rounded px-3 py-2">
                         <option value="GET">GET</option>
                         <option value="POST">POST</option>
@@ -124,19 +124,19 @@ INDEX_HTML = r"""
                     </select>
                 </div>
                 <div>
-                    <label class="block text-sm font-medium mb-1">Endpoint</label>
+                    <label class="block text-md font-medium mb-1 text-bold">Endpoint</label>
                     <input type="text" id="endpoint" placeholder="/api/v1/version" 
-                           class="w-full border rounded px-3 py-2" value="/api/v1/version">
+                           class="w-full border rounded px-3 py-2" value="/api/v1/scim2/Users">
                 </div>
             </div>
             
             <div class="mb-4">
-                <label class="block text-sm font-medium mb-1">Payload (JSON, optional)</label>
+                <label class="block text-md font-medium mb-1 text-bold">Payload (JSON, optional)</label>
                 <textarea id="payload" rows="4" placeholder='{"key": "value"}' 
                           class="w-full border rounded px-3 py-2 font-mono text-sm"></textarea>
             </div>
             
-            <button id="executeBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-medium">
+            <button id="executeBtn" class="bg-[#007bff] hover:bg-[#0056b3] text-white px-6 py-2 rounded font-medium">
                  Send Request
             </button>
         </div>
